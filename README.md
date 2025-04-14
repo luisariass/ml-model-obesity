@@ -6,7 +6,7 @@ Este proyecto tiene como objetivo construir un modelo de clasificación para pre
 
 ## Pipeline utlizando PyCaret 
 se llevara a cabo el siguiente flujo de trabajo
-![Gráfico AUC](images/auc.png)
+![Gráfico AUC](images/pipeline.png)
 
 
 ## Organización del Proyecto
