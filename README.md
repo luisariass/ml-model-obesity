@@ -19,7 +19,7 @@ El proyecto está organizado en las siguientes secciones:
 8. **Evaluación del Modelo:** Calcula y muestra varias métricas de evaluación del modelo, incluyendo precisión, recall, puntaje F1 y AUC.
 
 ## Visualización del modelo 
-![Gráfico AUC](images/auc_plot.png)
+![Gráfico AUC](images/auc.png)
 
 ## Resultados
 
