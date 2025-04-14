@@ -5,7 +5,8 @@
 Este proyecto tiene como objetivo construir un modelo de clasificación para predecir el nivel de obesidad utilizando el conjunto de datos "ObesityDataSet" y la librería PyCaret. El proyecto sigue un flujo de trabajo estándar de ciencia de datos, que incluye la preparación de datos, la comparación de modelos, el ajuste, la visualización, la finalización y la predicción.
 
 ## Pipeline utlizando PyCaret 
-se llevara a cabo el siguiente flujo de trabajo
+se llevara a cabo el siguiente flujo de trabajo para la construccion del modelo predictivo
+
 ![Gráfico AUC](images/pipeline.png)
 
 
