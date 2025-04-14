@@ -14,13 +14,13 @@ se llevara a cabo el siguiente flujo de trabajo para la construccion del modelo 
 
 El proyecto está organizado en las siguientes secciones:
 
-1. **Preparación de Datos:** Carga el conjunto de datos, realiza una división entre conjuntos de entrenamiento y prueba, y configura el entorno de PyCaret.
-2. **Comparación de Modelos:** Compara diferentes modelos de clasificación utilizando la función `compare_models()` de PyCaret.
+1. **Preparación de Datos:** Carga el conjunto de datos utilizando la funcion `get_data()` , inicialmente tomamos del data set original `5 %` de datos para definirlos como `data_unseen` , esto con el fin de usarlo para predicciones futuras, estos no intervienen con el modelo solo son datos de validacion. por otro lado tambien se realiza una división entre conjuntos de entrenamiento `70 % ` y prueba  `30 % ` y se configura el entorno de PyCaret.
+2. **Comparación de Modelos:** Compara diferentes modelos de clasificación utilizando la función `compare_models()` de PyCaret. donde la salida imprime una cuadrícula de puntuación que muestra el promedio de la Exactitud, AUC, Recall, Precisión, F1, Kappa, y MCC a través de los pliegues (10 por defecto) junto con los tiempos de entrenamiento.
 3. **Ajuste del Modelo:** Ajusta los hiperparámetros del modelo seleccionado (Regresión Logística) usando la función `tune_model()` de PyCaret.
 4. **Visualización del Modelo:** Genera varios gráficos para analizar el rendimiento del modelo, incluyendo AUC, curva de precisión-recall, matriz de confusión y reporte de clasificación.
 5. **Finalización del Modelo:** Finaliza el modelo ajustado usando la función `finalize_model()` de PyCaret.
-6. **Predicción:** Realiza predicciones en datos no vistos (30% del conjunto de datos) utilizando el modelo finalizado.
-7. **Guardado y Carga del Modelo:** Guarda y carga el modelo finalizado para su uso posterior.
+6. **Predicción:** Realiza predicciones con los datos del `30 % ` del conjunto de datos que eran utilziados para prueba y ademas, se realiza una prediccion con el `5 %` de los datos que no haya visto el modelo.
+7. **Guardado y Carga del Modelo:** utilizamos la funcion `save_model()` para guarda en un archivo `.pkl` y la funcion `load_model()` carga el modelo finalizado para su uso posterior.
 8. **Evaluación del Modelo:** Calcula y muestra varias métricas de evaluación del modelo, incluyendo precisión, recall, puntaje F1 y AUC.
 
 ## Visualización del modelo 
